@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            height:100vh;
+            margin: 0;
+        }
+        .container{
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+        }
+        h1{
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .input-container{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #cityInput{
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;;
+            border-radius: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #getWeatherBtn{
+            background-color: #007bff;
+            border-radius: 5px;
+            color: #fff;
+            margin-left: 10px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+        }
+
+        #getWeatherBtn:hover{
+            background-color: #0056b3;
+        }
+
+        .weather-info{
+            margin-top: 20px;
+            text-align: left;
+        }
+        .weather-info p{
+            /* max-resolution: 5px 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-container">
+            <input type="text" id="cityInput" placeholder="Enter City Name ">
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+        <div class="weather-info" id="weatherInfo">
+
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+
+</html>
